@@ -1,3 +1,5 @@
+package edu.utsa.cs3443.myfitlife.model;
+
 import androidx.annotation.NonNull;
 
 public class Situp extends Workout {
