@@ -1,8 +1,8 @@
 import androidx.annotation.NonNull;
 
 public class Burpees extends Workout{
-    public Burpees(int calPerRep, String workout_Desc, String workoutName) {
-        super(calPerRep, workout_Desc, workoutName);
+    public Burpees(int calPerRep, String workoutName) {
+        super(calPerRep, workoutName);
     }
     public double burpees_calPerRep(double burpees_userIn){
         return burpees_userIn / (200 * 60);

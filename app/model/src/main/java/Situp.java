@@ -1,8 +1,8 @@
 import androidx.annotation.NonNull;
 
 public class Situp extends Workout {
-    public Situp(int calPerRep, String workout_Desc, String workoutName) {
-        super(calPerRep, workout_Desc, workoutName);
+    public Situp(int calPerRep, String workoutName) {
+        super(calPerRep, workoutName);
     }
     public double situp_calPerRep(double situp_userIn){
         return situp_userIn * .5;
