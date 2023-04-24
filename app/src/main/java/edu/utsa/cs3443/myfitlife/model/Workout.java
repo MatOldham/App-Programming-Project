@@ -1,3 +1,5 @@
+package edu.utsa.cs3443.myfitlife.model;
+
 public abstract class Workout {
     private int calorieCalc;
     //private String workout_Desc;
