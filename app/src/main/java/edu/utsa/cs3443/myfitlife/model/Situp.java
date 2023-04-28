@@ -11,7 +11,7 @@ public class Situp extends Workout {
     }
 
     @NonNull
-    public String toString() {
+    public static String getDesc() {
         return " Situps are classic abdominal exercises done by " +
                 "lying on your back and lifting your torso. " +
                 "They use your body weight to strengthen and tone the core-stabilizing abdominal muscles. " +

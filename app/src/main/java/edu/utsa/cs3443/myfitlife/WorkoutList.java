@@ -13,8 +13,13 @@ public class WorkoutList extends AppCompatActivity {
         setContentView(R.layout.activity_workout_list);
 
         Button receiptButton = findViewById(R.id.button22);
+        Button burpeesButton = findViewById(R.id.button);
+        Button situpsButton = findViewById(R.id.button2);
         ReceiptController receiptController = new ReceiptController(this);
+        WorkoutController workoutController = new WorkoutController(this);
 
+        burpeesButton.setOnClickListener(workoutController);
+        situpsButton.setOnClickListener(workoutController);
         receiptButton.setOnClickListener(receiptController);
     }
 }

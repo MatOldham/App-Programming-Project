@@ -10,7 +10,7 @@ public class ReceiptController implements View.OnClickListener{
         this.workoutList = workoutList;
     }
     @Override
-    public void onClick(View view) {
+    public void onClick(View view) {        //current activity, started activity
         workoutList.startActivity(new Intent(workoutList, Receipt.class));
     }
 }

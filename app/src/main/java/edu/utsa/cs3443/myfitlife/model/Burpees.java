@@ -11,12 +11,11 @@ public class Burpees extends Workout{
     }
 
     @NonNull
-    public String toString() {
+    public static String getDesc() {
         return " A burpee is essentially a two-part exercise: " +
                 "a pushup followed by a leap in the air. " +
                 "Doing several burpees in a row can be tiring, " +
                 "but this versatile exercise may be worth the payoff, " +
-                "especially if you're looking for a way to build strength and endurance, " +
-                "while burning calories, and boosting your cardio fitness.";
+                "especially if you're looking for a way to build strength and endurance.";
     }
 }
