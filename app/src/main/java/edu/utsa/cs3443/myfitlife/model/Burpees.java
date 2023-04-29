@@ -3,8 +3,10 @@ package edu.utsa.cs3443.myfitlife.model;
 import androidx.annotation.NonNull;
 
 public class Burpees extends Workout{
-    public Burpees(int calPerRep, String workoutName) {
-        super(calPerRep, workoutName);
+    private String workoutName;
+    public Burpees(int calPerRep, int numReps) {
+        super(calPerRep, numReps);
+        this.workoutName = "Burpees";
     }
     public double burpees_calPerRep(double burpees_userIn){
         return burpees_userIn / (200 * 60);

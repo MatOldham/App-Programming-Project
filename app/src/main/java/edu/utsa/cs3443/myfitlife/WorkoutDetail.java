@@ -3,6 +3,7 @@ package edu.utsa.cs3443.myfitlife;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class WorkoutDetail extends AppCompatActivity {
@@ -11,6 +12,12 @@ public class WorkoutDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout_detail);
+
+        Button confirmButton = findViewById(R.id.button4);
+        DetailController detailController = new DetailController(this);
+
+        confirmButton.setOnClickListener(detailController);
+
     }
 
     //called when the activity is shown to the user, changes text here
@@ -32,4 +39,6 @@ public class WorkoutDetail extends AppCompatActivity {
         numOf.setText(numOfWorkout);
 
     }
+
+
 }
