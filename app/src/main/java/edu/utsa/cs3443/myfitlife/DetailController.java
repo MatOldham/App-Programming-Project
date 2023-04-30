@@ -2,9 +2,11 @@ package edu.utsa.cs3443.myfitlife;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class DetailController implements View.OnClickListener{
@@ -21,10 +23,9 @@ public class DetailController implements View.OnClickListener{
         String name = workName.getText().toString();
 
         int numReps = Integer.parseInt(editText);
-
-        Intent intent = new Intent(workoutDetail, WorkoutList.class);
-        intent.putExtra("workName", name);
-        intent.putExtra("workReps", numReps);
+        Intent intent = new Intent();
+        intent.putExtra("resultName", name);
+        intent.putExtra("resultReps", numReps);
         workoutDetail.setResult(Activity.RESULT_OK, intent);
         workoutDetail.finish();
     }
