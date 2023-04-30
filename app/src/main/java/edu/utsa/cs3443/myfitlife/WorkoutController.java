@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.view.View;
 
 import edu.utsa.cs3443.myfitlife.model.Burpees;
+import edu.utsa.cs3443.myfitlife.model.Dips;
+import edu.utsa.cs3443.myfitlife.model.Pullup;
+import edu.utsa.cs3443.myfitlife.model.Pushup;
 import edu.utsa.cs3443.myfitlife.model.Situp;
 import edu.utsa.cs3443.myfitlife.model.Workout;
 
@@ -41,9 +44,27 @@ public class WorkoutController implements View.OnClickListener {
                 workoutList.startActivityForResult(intent,0);
                 break;
                 //Other workout
-            //case R.id.button3:
-           //     alias = "";
-            //    break;
+            case R.id.button3:
+                alias = "Pushups";
+                intent.putExtra("workDesc", Pushup.getDesc());
+                intent.putExtra("workName", alias);
+
+                workoutList.startActivityForResult(intent,0);
+                break;
+            case R.id.button4:
+                alias = "Pullups";
+                intent.putExtra("workDesc", Pullup.getDesc());
+                intent.putExtra("workName", alias);
+
+                workoutList.startActivityForResult(intent,0);
+                break;
+            case R.id.button5:
+                alias = "Dips";
+                intent.putExtra("workDesc", Dips.getDesc());
+                intent.putExtra("workName", alias);
+
+                workoutList.startActivityForResult(intent,0);
+                break;
         }
     }
 
