@@ -21,43 +21,36 @@ android:layout_height="match_parent">
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Workout 1" />
+            android:text="Burpees"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Workout 2" />
+            android:text="Situps"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Workout 3" />
+            android:text="Pushups"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Workout 4" />
+            android:text="Pullups"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="Workout 5" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:text="Workout 6" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:text="Workout 7" />
+            android:text="Dips"
+            android:textSize="24sp" />
     </LinearLayout>
 </ScrollView>
 

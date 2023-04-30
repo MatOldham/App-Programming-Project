@@ -6,7 +6,7 @@ public class Situp extends Workout {
     private String workoutName;
     public Situp(int calPerRep, int numReps) {
         super(calPerRep, numReps);
-        this.workoutName = "Burpees";
+        this.workoutName = "Situps";
     }
     public double situp_calPerRep(double situp_userIn){
         return situp_userIn * .5;

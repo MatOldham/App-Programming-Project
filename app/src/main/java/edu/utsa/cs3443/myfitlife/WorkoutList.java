@@ -11,6 +11,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import edu.utsa.cs3443.myfitlife.model.Burpees;
+import edu.utsa.cs3443.myfitlife.model.Dips;
+import edu.utsa.cs3443.myfitlife.model.Pullup;
+import edu.utsa.cs3443.myfitlife.model.Pushup;
 import edu.utsa.cs3443.myfitlife.model.Situp;
 import edu.utsa.cs3443.myfitlife.model.Workout;
 
@@ -26,11 +29,17 @@ public class WorkoutList extends AppCompatActivity {
         Button receiptButton = findViewById(R.id.button22);
         Button burpeesButton = findViewById(R.id.button);
         Button situpsButton = findViewById(R.id.button2);
+        Button pushupsButton = findViewById(R.id.button3);
+        Button pullupsButton = findViewById(R.id.button4);
+        Button dipsButton = findViewById(R.id.button5);
         ReceiptController receiptController = new ReceiptController(this);
         WorkoutController workoutController = new WorkoutController(this);
 
         burpeesButton.setOnClickListener(workoutController);
         situpsButton.setOnClickListener(workoutController);
+        pushupsButton.setOnClickListener(workoutController);
+        pullupsButton.setOnClickListener(workoutController);
+        dipsButton.setOnClickListener(workoutController);
         receiptButton.setOnClickListener(receiptController);
     }
 
@@ -55,7 +64,21 @@ public class WorkoutList extends AppCompatActivity {
                         workoutArray.add(newWorkout);
 
                         break;
+                    case "Pushups":
+                        Pushup pushups = new Pushup(100, numReps);
+                        workoutArray.add(pushups);
 
+                        break;
+                    case "Pullups":
+                        Pullup pullups = new Pullup(100, numReps);
+                        workoutArray.add(pullups);
+
+                        break;
+                    case "Dips":
+                        Dips dips = new Dips(100, numReps);
+                        workoutArray.add(dips);
+
+                        break;
                 }
             }
         }
