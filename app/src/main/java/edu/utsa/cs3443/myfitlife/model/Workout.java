@@ -4,13 +4,13 @@ public abstract class Workout {
     private int calorieCalc;
     //private String workout_Desc;
     //private int workout_Duration;
-    private String workoutName;
+    private int numReps;
 
-    public Workout(int calPerRep, String workoutName){
+    public Workout(int calPerRep, int numReps){
         this.calorieCalc = calPerRep;
         //this.workout_Desc = workout_Desc;
         //this.workout_Duration = workout_Duration;
-        this.workoutName = workoutName;
+        this.numReps = numReps;
     }
 
     public int getCalorieCalc() {
@@ -37,11 +37,6 @@ public abstract class Workout {
         this.workout_Duration = workout_Duration;
     }
 */
-    public String getWorkoutName() {
-        return workoutName;
-    }
 
-    public void setWorkoutName(String workoutName) {
-        this.workoutName = workoutName;
-    }
+
 }

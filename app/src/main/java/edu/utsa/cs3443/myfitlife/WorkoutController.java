@@ -29,7 +29,7 @@ public class WorkoutController implements View.OnClickListener {
                 intent.putExtra("workName", alias);
 
                 //Will return information to onActivityResult in main activity class
-                workoutList.startActivityForResult(intent, WorkoutList.RESULT_OK);
+                workoutList.startActivityForResult(intent, 0);
                 break;
             case R.id.button2:
                 alias = "Situps";
@@ -38,7 +38,7 @@ public class WorkoutController implements View.OnClickListener {
                 intent.putExtra("workName", alias);
 
                 //Will return information to onActivityResult in main activity class
-                workoutList.startActivityForResult(intent, WorkoutList.RESULT_OK);
+                workoutList.startActivityForResult(intent,0);
                 break;
                 //Other workout
             //case R.id.button3:
