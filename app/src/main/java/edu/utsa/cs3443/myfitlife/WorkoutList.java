@@ -55,27 +55,27 @@ public class WorkoutList extends AppCompatActivity {
                 switch (workoutName) {
                     case "Burpees":
                         //Adds burpees to a workoutlist arrayList, 200 calories per rep (will change)
-                        workoutArray.add(new Burpees(200, numReps));
+                        workoutArray.add(new Burpees(6, numReps));
 
 
                         break;
                     case "Situps":
-                        Situp newWorkout = new Situp(100, numReps);
+                        Situp newWorkout = new Situp(2, numReps);
                         workoutArray.add(newWorkout);
 
                         break;
                     case "Pushups":
-                        Pushup pushups = new Pushup(100, numReps);
+                        Pushup pushups = new Pushup(1, numReps);
                         workoutArray.add(pushups);
 
                         break;
                     case "Pullups":
-                        Pullup pullups = new Pullup(100, numReps);
+                        Pullup pullups = new Pullup(4, numReps);
                         workoutArray.add(pullups);
 
                         break;
                     case "Dips":
-                        Dips dips = new Dips(100, numReps);
+                        Dips dips = new Dips(5, numReps);
                         workoutArray.add(dips);
 
                         break;
