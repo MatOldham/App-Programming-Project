@@ -13,7 +13,9 @@ public class Pullup extends Workout {
     public double pullup_calPerRep(double pullup_userIn) {
         return pullup_userIn * 1;
     }
-
+    public String getWorkoutName(){
+        return this.workoutName;
+    }
     @NonNull
     public static String getDesc() {
         return "A pull-up is an upper-body exercise that involves hanging from a pull-up bar by your hands with your palms facing away from you, and lifting your entire body up with your arm and back muscles until your chest touches the bar.";

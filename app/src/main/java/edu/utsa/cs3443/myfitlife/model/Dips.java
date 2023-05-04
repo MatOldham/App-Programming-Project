@@ -13,7 +13,9 @@ public class Dips extends Workout {
     public double dips_calPerRep(double dips_userIn) {
         return dips_userIn * 2;
     }
-
+    public String getWorkoutName(){
+        return this.workoutName;
+    }
     @NonNull
     public static String getDesc() {
         return "Dips are a bodyweight exercise that develops the triceps and other upper-body muscles. The exercise begins when you hold on to parallel bars with your arms straight. You then bend your elbows until your upper arms are parallel to the ground before driving up to the starting position.";

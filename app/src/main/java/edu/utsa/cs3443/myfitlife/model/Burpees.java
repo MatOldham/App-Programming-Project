@@ -12,6 +12,10 @@ public class Burpees extends Workout{
         return burpees_userIn / (200 * 60);
     }
 
+    public String getWorkoutName(){
+        return this.workoutName;
+    }
+
     @NonNull
     public static String getDesc() {
         return " A burpee is essentially a two-part exercise: " +
