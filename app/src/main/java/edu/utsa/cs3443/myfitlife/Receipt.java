@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.HashMap;
+
 import edu.utsa.cs3443.myfitlife.model.Workout;
 
 public class Receipt extends AppCompatActivity {
@@ -22,11 +24,6 @@ public class Receipt extends AppCompatActivity {
 
 
 
-        TextView burpeesText = findViewById(R.id.textView17);
-        TextView dipsText = findViewById(R.id.textView10);
-        TextView pullupText = findViewById(R.id.textView7);
-        TextView pushupText = findViewById(R.id.textView8);
-        TextView situpText = findViewById(R.id.textView9);
 
         String workName = getIntent().getStringExtra("workName");
 
@@ -46,8 +43,25 @@ public class Receipt extends AppCompatActivity {
             }
         });
 
-        do {
-            //prints out contents
-        } while(workoutList != null);
+    }
+
+    protected void onStart() {
+        super.onStart();
+
+
+        TextView burpeesText = findViewById(R.id.textView17);
+        TextView dipsText = findViewById(R.id.textView10);
+        TextView pullupText = findViewById(R.id.textView7);
+        TextView pushupText = findViewById(R.id.textView8);
+        TextView situpText = findViewById(R.id.textView9);
+        HashMap<String, Integer> calMap = (HashMap<String, Integer>) getIntent().getSerializableExtra("calMap");
+
+        burpeesText.setText(calMap.get("Burpees") + "");
+        dipsText.setText(calMap.get("Dips") + "");
+        pullupText.setText(calMap.get("Pullups") + "");
+        pushupText.setText(calMap.get("Pushups") + "");
+        situpText.setText(calMap.get("Situps") + "");
+
+
     }
 }

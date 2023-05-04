@@ -1,5 +1,7 @@
 package edu.utsa.cs3443.myfitlife.model;
 
+import androidx.annotation.NonNull;
+
 public abstract class Workout {
     private int calorieCalc;
     //private String workout_Desc;
@@ -16,6 +18,10 @@ public abstract class Workout {
     public int getCalorieCalc() {
         return calorieCalc;
     }
+    public int getNumReps() { return numReps; }
+
+
+    public abstract String getWorkoutName();
 
     public void setCalorieCalc(int calorieCalc) {
         this.calorieCalc = calorieCalc;

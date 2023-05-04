@@ -11,7 +11,9 @@ public class Situp extends Workout {
     public double situp_calPerRep(double situp_userIn){
         return situp_userIn * .5;
     }
-
+    public String getWorkoutName(){
+        return this.workoutName;
+    }
     @NonNull
     public static String getDesc() {
         return " Situps are classic abdominal exercises done by " +
